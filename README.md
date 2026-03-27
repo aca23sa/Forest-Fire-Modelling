@@ -49,10 +49,17 @@ pip install -r requirements.txt
 
 ## Running the Simulation
 
-### Option 1: Run directly (recommended)
+---
+
+### Option 1: Run the Graphical Interface (requires CAPyle)
+
+The project includes a **graphical interface** for running cellular automata simulations:
+
+1. **Download** `CAPyle_releaseV2` from CAPyle releases and place it in the project directory or a known path.
+2. **Run the run_tool.py script:**
 
 ```bash
-python run.py
+python run_tool.py
 ```
 
 ---
