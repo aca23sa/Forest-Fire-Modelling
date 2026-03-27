@@ -1,11 +1,11 @@
 
 @echo off
 REM ============================
-REM Running Teaching Tool Web Server on Windows with Docker - author: Ayesha Sana
+REM Run Forest Fire Model Web App on Windows with Docker
 REM ============================
 
 REM ---- CONFIG ----
-set IMAGE_NAME=com3524
+set IMAGE_NAME=forest-fire-model
 
 REM ---- BUILD IMAGE ----
 echo Building Docker image...

@@ -1,20 +1,17 @@
 #!/bin/sh
 
-#  com3524.sh
+# Allow X11 connections (for GUI support)
 xhost +127.0.0.1
 
-# 2. Build the image (rebuild every time if needed)
-docker build -t com3524 .
+# Build Docker image
+docker build -t forest-fire-model .
 
-# 3. Run your app with display forwarding
+# Run container with display forwarding
 docker run -it \
     -p 5001:5000 \
     -e DISPLAY=host.docker.internal:0 \
-    -v "$(pwd)":/src \
-    --name com3524 \
-    --hostname com3524 \
-    com3524 \
+    -v "$(pwd)":/app \
+    --name forest-fire-model \
+    --hostname forest-fire-model \
+    forest-fire-model \
     bash
-#
-#  Created by Ayesha Sana on 21/08/2025.
-#  
